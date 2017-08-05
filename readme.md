@@ -17,14 +17,15 @@ Before using this Api, you must obtain a client key and secret key from Webshino
 
 Update your `composer.json` file and add the following under the `require` key
 
-	"ngambmicheal/mobile_money": "dev-master"
+	"ngambmicheal/mobilemoney": "dev-master"
 
 Run the composer update command:
 
 	$ composer update
 
-Or you can still run the command : 
-	$ composer require ngambmicheal/mobile_money
+Or you can still run the command:
+
+	$ composer require ngambmicheal/mobilemoney
 
 In your `config/app.php` add `'Ngambmicheal\MobileMoney\MobileMoneyProvider'` to the end of the `$providers` array
 
@@ -37,7 +38,7 @@ In your `config/app.php` add `'Ngambmicheal\MobileMoney\MobileMoneyProvider'` to
 
     ),
 
-Still under `config/app.php` add `'FFMPEG' => 'Ngambmicheal\MobileMoney\MobileMoney'` to the `$aliases` array
+Still under `config/app.php` add `'MobileMoney' => 'Ngambmicheal\MobileMoney\MobileMoney'` to the `$aliases` array
 
     'aliases' => array(
 
@@ -54,7 +55,7 @@ Run the `artisan` command below to publish the configuration file
 
 Navigate to `app/config/mobilemoney.php` and update all four parameters
 
-###Config
+### Config
  
  In the config/mobilemoney.php file
 
@@ -80,7 +81,7 @@ return [
 
 ```
 
-###Examples
+### Examples
 
 
 ```php

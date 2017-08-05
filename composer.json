@@ -1,5 +1,5 @@
 {
-    "name": "ngambmicheal/mobile_money",
+    "name": "ngambmicheal/mobilemoney",
     "description": "\"Payment Services through Mobile Money Services, MTN Mobile Money, Orange Money for Laravel \"",
     "license": "MIT Liscence",
     "keywords": ["laravel", "mobile money", "payment services"],
