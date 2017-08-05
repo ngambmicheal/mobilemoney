@@ -111,7 +111,8 @@ class MobileMoney {
 	}
 
 	private function configure(){
-
+		$this->client_key = config('mobilemoney.webshinobis_client_key');
+		$this->secret_key = config('mobilemoney.webshinobis_secret_key');
 	}
 
 	/** 

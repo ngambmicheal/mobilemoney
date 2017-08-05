@@ -87,7 +87,7 @@ return [
 ```php
 // doing an mtn mobile money transaction;
 
-use MobileMoney 
+use MobileMoney;
 
 class MomoController extends controller {
     
@@ -102,6 +102,13 @@ class MomoController extends controller {
         $mobilemoney = new MobileMoney;
         $mobilemoney->phone = $phone;
         $mobilemoney->price = $price;
+
+        // you can overide your client and secret key
+
+        $mobilemoney->setClientKey($client_key);
+        $mobilemoney->setSecretKey($secret_key);
+
+        // perform the transaction;
         
         $momo        = $mobilemoney->doMTNTransaction();
 

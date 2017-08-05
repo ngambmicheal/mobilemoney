@@ -7,10 +7,10 @@
 		*/
 
 		/*	Your client key */
-		'webshinobis_client_key'=>'',
+		'webshinobis_client_key'=>env('webshinobis_client_key',''),
 
 		/*  Your secret key */
-		'webshinobis_secret_key'=>'',
+		'webshinobis_secret_key'=>env('webshinobis_secret_key',''),
 
 		/* Do you want your app to support MTN mobile services? 
 
