@@ -16,9 +16,9 @@ class MobileMoneyServiceProvider extends ServiceProvider
         //
 
          $this->publishes([
-            __DIR__ . '/../config' => config_path('mobilemoney'),            
+            __DIR__ . '/../config' => config_path('mobilemoney.php'),            
             __DIR__ . '/../database' => base_path('/database/migrations/'),
-            __DIR__ . '/../models'   => base_path('/App/momo'),
+            __DIR__ . '/../models'   => base_path('/app/model'),
             ]);
           
     }
